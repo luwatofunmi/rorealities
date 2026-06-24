@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connect With Us — Rhapsody of Realities</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-row">
+    <a href="index.html" class="brand">
+      <div class="mark">R</div>
+      <div class="name">Rhapsody of Realities</div>
+    </a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="https://read.rhapsodyofrealities.org/">Daily Devotional</a>
+      <a href="about-us.html">About Us</a>
+      <a href="networks.html">Networks</a>
+      <a href="outreaches.html">Outreaches</a>
+      <a href="others.html">Others</a>
+      <a href="connect-with-us.html" class="active">Connect</a>
+      <a href="connect-with-us.html#contact" class="cta-btn">Partner With Us</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="wrap page-header-inner">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Connect With Us</span></div>
+      <span class="eyebrow">Connect With Us</span>
+      <h1>Wherever you are, there's a <em>next step</em> here.</h1>
+      <p>Say a prayer, share a testimony, ask for prayer, or reach our offices directly — pick where you'd like to start.</p>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <nav class="tab-nav">
+        <a href="#salvation" class="tab-link active">Prayer of Salvation</a>
+        <a href="#testimony" class="tab-link">Share Your Testimony</a>
+        <a href="#prayer-request" class="tab-link">Prayer Request</a>
+        <a href="#contact" class="tab-link">Contact Us</a>
+      </nav>
+
+      <!-- ===== Prayer of Salvation ===== -->
+      <div id="salvation" style="margin-bottom:80px;">
+        <div class="ribbon-tick"><div class="tab"></div><div class="rule"></div></div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:start;">
+          <div class="prose" style="max-width:none;">
+            <h3 style="margin-top:0;">A New Life in Christ</h3>
+            <p>We invite you to make Jesus Christ the Lord of your life by praying this simple prayer now:</p>
+            <blockquote>"O Lord God, I believe with all my heart in Jesus Christ, Son of the living God. I believe He died for me and God raised Him from the dead. I believe He's alive today. I confess with my mouth that Jesus Christ is the Lord of my life from this day. Through Him and in His Name, I have eternal life; I'm born again. Thank you Lord, for saving my soul! I'm now a child of God. Hallelujah!"</blockquote>
+            <p>Congratulations! You are now a child of God. We'd love to send you a book titled <strong>"Now That You Are Born Again"</strong> to help you grow as a Christian — just leave your details.</p>
+          </div>
+          <form class="simple-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Thank you — sent ✓';">
+            <div>
+              <label for="sal-name">Full Name</label>
+              <input type="text" id="sal-name" placeholder="Your name" required>
+            </div>
+            <div>
+              <label for="sal-email">Email Address</label>
+              <input type="email" id="sal-email" placeholder="you@example.com" required>
+            </div>
+            <div>
+              <label for="sal-phone">Phone Number</label>
+              <input type="tel" id="sal-phone" placeholder="+1 234 567 8900">
+            </div>
+            <button type="submit" class="btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- ===== Share Your Testimony ===== -->
+      <div id="testimony" style="margin-bottom:80px;">
+        <div class="ribbon-tick sage"><div class="tab"></div><div class="rule"></div></div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:start;">
+          <div class="prose" style="max-width:none;">
+            <h3 style="margin-top:0;">What's Your Rhapsody Story?</h3>
+            <p>We hope Rhapsody of Realities has been a blessing to you, or to someone you know. Share your testimony with us today — your story could be exactly what someone else needs to read.</p>
+          </div>
+          <form class="simple-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Testimony sent ✓';">
+            <div>
+              <label for="test-name">Full Name</label>
+              <input type="text" id="test-name" placeholder="Your name" required>
+            </div>
+            <div>
+              <label for="test-email">Email</label>
+              <input type="email" id="test-email" placeholder="you@example.com" required>
+            </div>
+            <div>
+              <label for="test-phone">Phone</label>
+              <input type="tel" id="test-phone" placeholder="+1 234 567 8900">
+            </div>
+            <div>
+              <label for="test-message">Your Testimony</label>
+              <textarea id="test-message" placeholder="Tell us your story..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="background:var(--sage);">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- ===== Prayer Request ===== -->
+      <div id="prayer-request" style="margin-bottom:80px;">
+        <div class="ribbon-tick"><div class="tab"></div><div class="rule"></div></div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:start;">
+          <div class="prose" style="max-width:none;">
+            <h3 style="margin-top:0;">Need Prayer?</h3>
+            <p>If there's something on your heart you'd like the team to pray with you about, share it here. Every request is read, and held in confidence.</p>
+          </div>
+          <form class="simple-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Request sent ✓';">
+            <div>
+              <label for="pr-name">Full Name</label>
+              <input type="text" id="pr-name" placeholder="Your name" required>
+            </div>
+            <div>
+              <label for="pr-email">Email</label>
+              <input type="email" id="pr-email" placeholder="you@example.com" required>
+            </div>
+            <div>
+              <label for="pr-message">Your Prayer Request</label>
+              <textarea id="pr-message" placeholder="Share what's on your heart..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- ===== Contact Us ===== -->
+      <div id="contact">
+        <div class="ribbon-tick sage"><div class="tab"></div><div class="rule"></div></div>
+        <div class="section-head" style="margin-bottom:30px;">
+          <div>
+            <h3 style="font-size:24px; font-family:'DM Serif Display',serif;">Our Offices</h3>
+            <p>Email: <a href="mailto:info@rhapsodyofrealities.org" style="color:var(--ribbon); font-weight:600;">info@rhapsodyofrealities.org</a> &nbsp;·&nbsp; KingsChat: @rorcare</p>
+          </div>
+        </div>
+        <div class="office-grid">
+          <div class="office-card">
+            <div class="flag-tag">United Kingdom</div>
+            <h3>UK Office</h3>
+            <p>Unit C2, Thames View Business Centre,<br>Barlow Way, Rainham-Essex, RM13 8BT</p>
+            <a href="mailto:info@rhapsodyofrealities.org">info@rhapsodyofrealities.org</a>
+          </div>
+          <div class="office-card">
+            <div class="flag-tag">United States</div>
+            <h3>Christ Embassy Houston</h3>
+            <p>8623 Hemlock Hill Drive,<br>Houston, Texas 77083</p>
+            <a href="tel:+16016002363">+1 (601) 600-2363</a>
+          </div>
+          <div class="office-card">
+            <div class="flag-tag">Nigeria</div>
+            <h3>Abuja &amp; Lagos</h3>
+            <p>Plot 97, Durumi District, Abuja<br>Plot 22/23 Billingsway Road, Oregun, Ikeja, Lagos</p>
+            <a href="mailto:info@rhapsodyofrealities.org">info@rhapsodyofrealities.org</a>
+          </div>
+          <div class="office-card">
+            <div class="flag-tag">South Africa</div>
+            <h3>Randburg Office</h3>
+            <p>303 Pretoria Avenue, Cnr. Harley and Braam Fischer,<br>Randburg, Gauteng 2194</p>
+            <a href="mailto:info@rhapsodyofrealities.org">info@rhapsodyofrealities.org</a>
+          </div>
+          <div class="office-card">
+            <div class="flag-tag">Canada</div>
+            <h3>LoveWorld Publishing Canada</h3>
+            <p>4101 Steeles Ave W, Suite 204,<br>Toronto, Ontario M3N 1V7</p>
+            <a href="mailto:info@rhapsodyofrealities.org">info@rhapsodyofrealities.org</a>
+          </div>
+          <div class="office-card" style="background:var(--ink); border-color:var(--ink);">
+            <div class="flag-tag" style="color:var(--gold);">Phone Lines</div>
+            <h3 style="color:var(--parchment);">Call Us</h3>
+            <p style="color:#BFB9AB;">UK: +44 170 855 6604<br>UK Freephone: +44 800 131 0604<br>USA Freephone: +1 800 620 8522</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="brand"><div class="mark">R</div><div class="name">Rhapsody of Realities</div></a>
+        <p>The world's most translated daily devotional, bringing a fresh perspective from God's Word to millions of readers every day.</p>
+        <div class="foot-social">
+          <a href="https://kingschat.online/user/ror" aria-label="KingsChat">K</a>
+          <a href="https://x.com/RhapsodyDaily" aria-label="X / Twitter">X</a>
+          <a href="https://www.facebook.com/rhapsodyofrealitiesofficialpage/" aria-label="Facebook">f</a>
+          <a href="https://www.youtube.com/channel/UCIklq-XeB7WcILf1JrovfMA/" aria-label="YouTube">Y</a>
+          <a href="https://www.instagram.com/rhapsodydailydevo" aria-label="Instagram">I</a>
+        </div>
+      </div>
+
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <a href="https://read.rhapsodyofrealities.org/">Read Today's Devotional</a>
+        <a href="about-us.html">About Rhapsody</a>
+        <a href="about-the-author.html">About the Author</a>
+        <a href="using-rhapsody.html">How to Use Rhapsody</a>
+        <a href="networks.html">Networks</a>
+      </div>
+
+      <div class="foot-col">
+        <h4>Get Involved</h4>
+        <a href="others.html">Sponsor a Language</a>
+        <a href="outreaches.html">Mission Trips</a>
+        <a href="outreaches.html">ReachOut Campaigns</a>
+        <a href="https://shop.rhapsodytap2read.com/">Shop Tap2Read</a>
+      </div>
+
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <p style="margin-bottom:6px;">letschat@rhapsodyofrealities.org</p>
+        <p style="margin-bottom:6px;">UK: +44 170 855 6604</p>
+        <p style="margin-bottom:6px;">USA: +1 800 620 8522</p>
+        <a href="connect-with-us.html#contact">Contact Us →</a>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© 2026 Rhapsody of Realities Daily Devotional. All rights reserved.</span>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
